@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Database table</h1>
+
+<hr>
+{% for i in details %}
+<ul>
+    {{i.title,i.imageUri }}
+
+</ul>
+{% endfor %}
+
+{% endblock %}
